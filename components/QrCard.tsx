@@ -9,7 +9,7 @@ export const QrCard: React.FC<QrCardProps> = ({ imageURL, time }) => {
   if (!imageURL) {
     return (
       <div>
-        <p>Image URL not provided</p>
+        <p>图像链接未提供</p>
       </div>
     );
   }
@@ -19,7 +19,7 @@ export const QrCard: React.FC<QrCardProps> = ({ imageURL, time }) => {
       <Image
         src={imageURL}
         className="rounded "
-        alt="qr code"
+        alt="二维码"
         width={480}
         height={480}
       />
