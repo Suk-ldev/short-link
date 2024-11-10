@@ -36,7 +36,7 @@ function ShortLinkItem({ link }:{link?: string}) {
   const handleCopyClick = () => {
     if (link) {
       navigator.clipboard.writeText(link);
-      toast.success('Link copied to clipboard');
+      toast.success('链接已复制到剪切板');
     }
   };
 
@@ -51,7 +51,7 @@ function ShortLinkItem({ link }:{link?: string}) {
           onClick={handleCopyClick}
           className="ml-2"
         >
-         ✂️ Share
+         ✂️ 分享
         </Button>
       </div>
       <QRNormal value={link} />
@@ -121,7 +121,7 @@ const Body = ({
         if (!response.ok || response.status !== 200) {
           const text = await response.text();
           throw new Error(
-            `Failed to generate QR code: ${response.status}, ${text}`,
+            `生成二维码失败: ${response.status}, ${text}`,
           );
         }
 
@@ -129,7 +129,7 @@ const Body = ({
 
         console.log("response data:", data)
 
-        va.track('Generated Short Link', {
+        va.track('生成的短链', {
           url: values.url,
         });
         
@@ -181,7 +181,7 @@ const Body = ({
                 disabled={isLoading}
                 className="inline-flex justify-center mx-auto w-full"
               >
-                {isLoading ? <LoadingDots color="white" /> : response ? '✨ Regenerate' : 'Generate'}
+                {isLoading ? <LoadingDots color="white" /> : response ? '✨ 重新生成' : 'Generate'}
               </Button>
               {error && (
                 <Alert variant="destructive">
@@ -200,7 +200,7 @@ const Body = ({
           {submittedURL && (
             <>
               <h1 className="text-3xl font-bold sm:mb-5 mb-5 mt-5 sm:mt-0 sm:text-center text-left">
-                Your Short Link
+                属于你的短链接
               </h1>
               <ShortLinkItem link={response?.short_link} />
             </>
