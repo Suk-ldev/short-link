@@ -47,7 +47,7 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 role="button"
-                aria-label="Open the menu"
+                aria-label="打开菜单"
                 className="text-gray-500 hover:text-gray-800"
                 onClick={handleNavMenu}
               >
@@ -100,7 +100,7 @@ const Navbar = () => {
               })} */}
               <li>
                 <NavLink
-                  href="https://github.com/Suk-Idev/short-link"
+                  href="https://github.com/Suk-ldev/short-link"
                   className="block font-medium text-sm text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 md:inline"
                 >
                   Github
