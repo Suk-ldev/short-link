@@ -157,7 +157,7 @@ const Body = ({
     <a.div style={trail[trailDelayIndex + 1]}>
     <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20 gap-32">
       <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
-        Generate Short Link
+        生成短链
       </h1>
       <div className="max-w-xl w-full gap-8">
       <Form {...form}>
@@ -170,7 +170,7 @@ const Body = ({
                   <FormItem>
                     <FormLabel className="text-left font-medium"></FormLabel>
                     <FormControl>
-                      <Input placeholder="url" {...field} className="mx-auto" />
+                      <Input placeholder="输入原链接" {...field} className="mx-auto" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -181,12 +181,12 @@ const Body = ({
                 disabled={isLoading}
                 className="inline-flex justify-center mx-auto w-full"
               >
-                {isLoading ? <LoadingDots color="white" /> : response ? '✨ 重新生成' : 'Generate'}
+                {isLoading ? <LoadingDots color="white" /> : response ? '✨ 重新生成' : '生成'}
               </Button>
               {error && (
                 <Alert variant="destructive">
                   <AlertCircle className="h-4 w-4" />
-                  <AlertTitle>Error</AlertTitle>
+                  <AlertTitle>发生错误</AlertTitle>
                   <AlertDescription>{error.message}</AlertDescription>
                 </Alert>
               )}
