@@ -7,10 +7,10 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 let title = 'Suk-Link - Suk's Short Link Generator';
-let description = '生成属于你自己的短链接';
-let url = 'https://suk-link-code.vercel.app';
+let description = '在几秒内生成短链接';
+let url = 'https://slink-code.vercel.app';
 let ogimage = 'https://slink-code.vercel.app/og-image.png';
-let sitename = 'suk-link-code.vercel.app';
+let sitename = 'slink-code.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
