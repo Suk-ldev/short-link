@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
-let title = 'Suk-Link - Suk's Short Link Generator';
+let title = 'Suk-Link - Suk的短链生成器';
 let description = '在几秒内生成短链接';
 let url = 'https://slink-code.vercel.app';
 let ogimage = 'https://slink-code.vercel.app/og-image.png';
