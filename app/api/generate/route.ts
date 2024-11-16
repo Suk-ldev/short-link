@@ -26,7 +26,7 @@ function toBase62(num: number): string {
 
 const validateRequest = (request: ShortLinkGenerateRequest) => {
   if (!request.url) {
-    throw new Error('URL is required');
+    throw new Error('需要输入链接');
   }
 
 };
