@@ -6,11 +6,11 @@ import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
-let title = 'SLink - Short Link Generator';
-let description = 'Generate Short Link in seconds';
-let url = 'https://slink-code.vercel.app';
+let title = 'Suk-Link - Suk's Short Link Generator';
+let description = '生成属于你自己的短链接';
+let url = 'https://suk-link-code.vercel.app';
 let ogimage = 'https://slink-code.vercel.app/og-image.png';
-let sitename = 'slink-code.vercel.app';
+let sitename = 'suk-link-code.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="zh_cn">
       <head>
       </head>
       <body className={inter.className}>
